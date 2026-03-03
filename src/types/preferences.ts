@@ -3,6 +3,8 @@ export interface Preferences {
   dailyNotesFolder: string;
   dateFormat: string;
   timestampFormat: string;
+  sectionHeader?: string;
+  createNoteIfMissing?: boolean;
   transcriptionService?: "whisper" | "macos";
   openaiApiKey?: string;
 }

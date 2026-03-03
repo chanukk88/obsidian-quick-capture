@@ -1,25 +1,26 @@
 # Obsidian Quick Capture
 
-A Raycast extension to quickly capture thoughts (written or spoken) directly to your Obsidian daily note.
+A Raycast extension to quickly capture thoughts (written or spoken) directly to your Obsidian daily notes. **Works with any vault structure and note format** - from standard Daily Notes to custom Zettelkasten setups.
 
 ## Features
 
 - 📝 **Quick Note**: Instantly capture text thoughts to your daily note
 - 🎤 **Voice Capture**: Use macOS dictation to speak your thoughts
 - ⚡ **Fast**: Opens with a hotkey, saves with Cmd+S
-- 🎯 **Smart Formatting**: Automatically adds timestamps in your note format
-- 📅 **Daily Note Integration**: Finds or creates today's note automatically
+- 🎯 **Flexible**: Works with any note format - append to sections or end of file
+- 📅 **Smart**: Finds or creates today's note automatically
+- 🔧 **Configurable**: Customize paths, formats, and section headers
 
 ## Installation
 
 ### Development Mode
 
-1. Clone or download this repository
-2. Navigate to the project directory:
+1. Clone or download this repository:
    ```bash
-   cd /Users/james/Documents/claude/github/obsidian-quick-capture
+   git clone https://github.com/jameesy/obsidian-quick-capture.git
+   cd obsidian-quick-capture
    ```
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
@@ -40,12 +41,44 @@ Then import the extension into Raycast via Settings → Extensions → Add Exten
 
 ## Configuration
 
-Configure the extension via Raycast preferences (Cmd+, in any command):
+Configure the extension via Raycast preferences (press Cmd+, in any command):
 
-- **Vault Path**: Path to your Obsidian vault (default: `/Users/james/Documents/claude/vaults/2026`)
-- **Daily Notes Folder**: Folder where daily notes are stored (default: `2. Logs`)
+### Required Settings
+
+- **Vault Path**: Path to your Obsidian vault (e.g., `~/Documents/Obsidian/MyVault`)
 - **Date Format**: Format for daily note filenames (default: `yyyy-MM-dd`)
 - **Timestamp Format**: Format for timestamps in notes (default: `HH:mm`)
+
+### Optional Settings
+
+- **Daily Notes Folder**: Folder where daily notes are stored (leave empty for vault root)
+- **Section Header**: Section to append notes to (e.g., `## Inbox`, `**Notes**`)
+  - Leave empty to append to end of file
+  - Supports both markdown headings (`## Section`) and bold format (`**Section**`)
+- **Create Note if Missing**: Automatically create today's daily note if it doesn't exist (default: enabled)
+
+### Configuration Examples
+
+**Example 1: Standard Obsidian Daily Notes**
+```
+Vault Path: ~/Documents/Obsidian/MyVault
+Daily Notes Folder: Daily Notes
+Section Header: ## Inbox
+```
+
+**Example 2: Root Level Notes**
+```
+Vault Path: ~/Documents/MyVault
+Daily Notes Folder: (leave empty)
+Section Header: (leave empty - appends to end)
+```
+
+**Example 3: Custom Section with Bold Format**
+```
+Vault Path: ~/Documents/Zettelkasten
+Daily Notes Folder: Journal/Daily
+Section Header: **Quick Captures**
+```
 
 ## Usage
 

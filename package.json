@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "obsidian-quick-capture",
   "title": "Obsidian Quick Capture",
-  "description": "Quickly capture thoughts (written or spoken) directly to your Obsidian daily note",
+  "description": "Quickly capture thoughts to Obsidian daily notes. Works with any vault structure and note format.",
   "icon": "icon.png",
   "author": "james",
   "license": "MIT",
@@ -29,17 +29,16 @@
       "type": "textfield",
       "required": true,
       "title": "Vault Path",
-      "description": "Path to your Obsidian vault",
-      "default": "/Users/james/Documents/claude/vaults/2026",
-      "placeholder": "/path/to/vault"
+      "description": "Path to your Obsidian vault (e.g., ~/Documents/Obsidian/MyVault)",
+      "placeholder": "~/Documents/Obsidian/MyVault"
     },
     {
       "name": "dailyNotesFolder",
       "type": "textfield",
-      "required": true,
+      "required": false,
       "title": "Daily Notes Folder",
-      "description": "Folder within vault where daily notes are stored",
-      "default": "2. Logs",
+      "description": "Folder within vault where daily notes are stored (leave empty for vault root)",
+      "default": "",
       "placeholder": "Daily Notes"
     },
     {
@@ -59,6 +58,23 @@
       "description": "Format for timestamps in notes",
       "default": "HH:mm",
       "placeholder": "HH:mm"
+    },
+    {
+      "name": "sectionHeader",
+      "type": "textfield",
+      "required": false,
+      "title": "Section Header",
+      "description": "Section to append notes to (e.g., ## Inbox, **Notes**). Leave empty to append to end of file.",
+      "placeholder": "## Quick Notes"
+    },
+    {
+      "name": "createNoteIfMissing",
+      "type": "checkbox",
+      "required": false,
+      "title": "Create Daily Note if Missing",
+      "description": "Automatically create today's daily note if it doesn't exist",
+      "default": true,
+      "label": "Create note automatically"
     },
     {
       "name": "transcriptionService",

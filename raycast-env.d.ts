@@ -8,14 +8,18 @@
 /* eslint-disable @typescript-eslint/ban-types */
 
 type ExtensionPreferences = {
-  /** Vault Path - Path to your Obsidian vault */
+  /** Vault Path - Path to your Obsidian vault (e.g., ~/Documents/Obsidian/MyVault) */
   "vaultPath": string,
-  /** Daily Notes Folder - Folder within vault where daily notes are stored */
+  /** Daily Notes Folder - Folder within vault where daily notes are stored (leave empty for vault root) */
   "dailyNotesFolder": string,
   /** Date Format - Format for daily note filenames (using date-fns format) */
   "dateFormat": string,
   /** Timestamp Format - Format for timestamps in notes */
   "timestampFormat": string,
+  /** Section Header - Section to append notes to (e.g., ## Inbox, **Notes**). Leave empty to append to end of file. */
+  "sectionHeader"?: string,
+  /** Create Daily Note if Missing - Automatically create today's daily note if it doesn't exist */
+  "createNoteIfMissing": boolean,
   /** Transcription Service - Service to use for speech-to-text */
   "transcriptionService": "whisper" | "macos",
   /** OpenAI API Key - API key for OpenAI Whisper transcription */
