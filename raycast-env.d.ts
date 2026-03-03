@@ -1,0 +1,41 @@
+/// <reference types="@raycast/api">
+
+/* 🚧 🚧 🚧
+ * This file is auto-generated from the extension's manifest.
+ * Do not modify manually. Instead, update the `package.json` file.
+ * 🚧 🚧 🚧 */
+
+/* eslint-disable @typescript-eslint/ban-types */
+
+type ExtensionPreferences = {
+  /** Vault Path - Path to your Obsidian vault */
+  "vaultPath": string,
+  /** Daily Notes Folder - Folder within vault where daily notes are stored */
+  "dailyNotesFolder": string,
+  /** Date Format - Format for daily note filenames (using date-fns format) */
+  "dateFormat": string,
+  /** Timestamp Format - Format for timestamps in notes */
+  "timestampFormat": string,
+  /** Transcription Service - Service to use for speech-to-text */
+  "transcriptionService": "whisper" | "macos",
+  /** OpenAI API Key - API key for OpenAI Whisper transcription */
+  "openaiApiKey"?: string
+}
+
+/** Preferences accessible in all the extension's commands */
+declare type Preferences = ExtensionPreferences
+
+declare namespace Preferences {
+  /** Preferences accessible in the `quick-note` command */
+  export type QuickNote = ExtensionPreferences & {}
+  /** Preferences accessible in the `voice-capture` command */
+  export type VoiceCapture = ExtensionPreferences & {}
+}
+
+declare namespace Arguments {
+  /** Arguments passed to the `quick-note` command */
+  export type QuickNote = {}
+  /** Arguments passed to the `voice-capture` command */
+  export type VoiceCapture = {}
+}
+

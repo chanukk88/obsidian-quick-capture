@@ -1,0 +1,105 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "obsidian-quick-capture",
+  "title": "Obsidian Quick Capture",
+  "description": "Quickly capture thoughts (written or spoken) directly to your Obsidian daily note",
+  "icon": "icon.png",
+  "author": "james",
+  "license": "MIT",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "quick-note",
+      "title": "Quick Note",
+      "subtitle": "Obsidian",
+      "description": "Capture a quick thought to your daily note",
+      "mode": "view"
+    },
+    {
+      "name": "voice-capture",
+      "title": "Voice Capture",
+      "subtitle": "Obsidian",
+      "description": "Capture a spoken thought to your daily note",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "vaultPath",
+      "type": "textfield",
+      "required": true,
+      "title": "Vault Path",
+      "description": "Path to your Obsidian vault",
+      "default": "/Users/james/Documents/claude/vaults/2026",
+      "placeholder": "/path/to/vault"
+    },
+    {
+      "name": "dailyNotesFolder",
+      "type": "textfield",
+      "required": true,
+      "title": "Daily Notes Folder",
+      "description": "Folder within vault where daily notes are stored",
+      "default": "2. Logs",
+      "placeholder": "Daily Notes"
+    },
+    {
+      "name": "dateFormat",
+      "type": "textfield",
+      "required": true,
+      "title": "Date Format",
+      "description": "Format for daily note filenames (using date-fns format)",
+      "default": "yyyy-MM-dd",
+      "placeholder": "yyyy-MM-dd"
+    },
+    {
+      "name": "timestampFormat",
+      "type": "textfield",
+      "required": true,
+      "title": "Timestamp Format",
+      "description": "Format for timestamps in notes",
+      "default": "HH:mm",
+      "placeholder": "HH:mm"
+    },
+    {
+      "name": "transcriptionService",
+      "type": "dropdown",
+      "required": false,
+      "title": "Transcription Service",
+      "description": "Service to use for speech-to-text",
+      "default": "whisper",
+      "data": [
+        {
+          "title": "OpenAI Whisper",
+          "value": "whisper"
+        },
+        {
+          "title": "macOS Dictation",
+          "value": "macos"
+        }
+      ]
+    },
+    {
+      "name": "openaiApiKey",
+      "type": "password",
+      "required": false,
+      "title": "OpenAI API Key",
+      "description": "API key for OpenAI Whisper transcription"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.8",
+    "@raycast/utils": "^2.2.2",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
